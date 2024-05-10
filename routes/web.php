@@ -14,5 +14,23 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('frontend/index');
+})->name('frontend.index');
+
+Route::get('/about', function () {
+    return view('frontend/about');
+})->name ('frontend.about');
+
+Route::get('/contact', function () {
+    return view('frontend/contact');
+})->name ('frontend.contact');
+
+Route::get('/video', function () {
+    return view('frontend/video');
+
+})->name ('frontend.video');
+
+
+
+
+
